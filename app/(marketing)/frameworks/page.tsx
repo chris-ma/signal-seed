@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 import { Section } from "@/components/ui/section";
-import { Badge } from "@/components/ui/badge";
 import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { PHASES, getFrameworksByPhase } from "@/lib/frameworks-data";
 
@@ -16,7 +15,9 @@ export default function FrameworksPage() {
   return (
     <>
       <Section tone="charcoal" className="pb-16">
-        <Badge tone="dark">Frameworks</Badge>
+        <p className="text-[13px] font-semibold tracking-[1px] text-bone/70 uppercase">
+          Frameworks
+        </p>
         <h1 className="text-display-sm md:text-display mt-6 max-w-3xl text-bone">
           A structured practice for every stage of the journey.
         </h1>

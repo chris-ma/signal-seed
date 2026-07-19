@@ -4,6 +4,9 @@ interface BlueprintGridProps {
   className?: string;
 }
 
+const VERTICAL_LINES = [120, 240, 360, 480, 600, 720, 840, 960, 1080, 1200, 1320];
+const HORIZONTAL_LINES = [80, 160, 240, 320, 400, 480, 560];
+
 export function BlueprintGrid({ className }: BlueprintGridProps) {
   return (
     <svg
@@ -12,15 +15,12 @@ export function BlueprintGrid({ className }: BlueprintGridProps) {
       className={cn("absolute inset-0 h-full w-full text-stone/15", className)}
       aria-hidden
     >
-      <line x1="360" y1="0" x2="360" y2="620" stroke="currentColor" strokeWidth="1" />
-      <line x1="600" y1="0" x2="600" y2="620" stroke="currentColor" strokeWidth="1" />
-      <line x1="840" y1="0" x2="840" y2="620" stroke="currentColor" strokeWidth="1" />
-      <line x1="1080" y1="0" x2="1080" y2="620" stroke="currentColor" strokeWidth="1" />
-      <line x1="0" y1="150" x2="1440" y2="150" stroke="currentColor" strokeWidth="1" />
-      <line x1="0" y1="310" x2="1440" y2="310" stroke="currentColor" strokeWidth="1" />
-      <line x1="0" y1="470" x2="1440" y2="470" stroke="currentColor" strokeWidth="1" />
-      <circle cx="720" cy="360" r="120" fill="none" stroke="currentColor" strokeWidth="1" />
-      <circle cx="720" cy="360" r="180" fill="none" stroke="currentColor" strokeWidth="1" />
+      {VERTICAL_LINES.map((x) => (
+        <line key={`v-${x}`} x1={x} y1="0" x2={x} y2="620" stroke="currentColor" strokeWidth="1" />
+      ))}
+      {HORIZONTAL_LINES.map((y) => (
+        <line key={`h-${y}`} x1="0" y1={y} x2="1440" y2={y} stroke="currentColor" strokeWidth="1" />
+      ))}
     </svg>
   );
 }

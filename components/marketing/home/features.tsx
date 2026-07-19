@@ -26,16 +26,12 @@ const FEATURES: { icon: IconName; title: string; description: string }[] = [
   },
 ];
 
-export function FeaturesBenefits() {
+export function Features() {
   return (
     <Section tone="forest">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="text-[13px] font-semibold tracking-[1px] text-bone uppercase">
-          Features &amp; benefits
-        </p>
-        <h2 className="text-display-sm mt-4 text-bone">
-          Built to make evidence effortless.
-        </h2>
+        <p className="text-[13px] font-semibold tracking-[1px] text-bone uppercase">Features</p>
+        <h2 className="text-display-sm mt-4 text-bone">Built to make evidence effortless.</h2>
       </div>
       <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {FEATURES.map((feature) => (

@@ -1,26 +1,15 @@
-import Image from "next/image";
-
 import { getHeroCalloutStages } from "@/lib/lifecycle-data";
-
-const BONSAI_ALT =
-  "A bonsai tree with an exposed, tangled root system — ideas grow from structure and evidence, not shortcuts.";
+import { BonsaiIllustration } from "@/components/marketing/home/bonsai-illustration";
 
 export function HeroVisual() {
   const stages = getHeroCalloutStages();
 
   return (
     <div className="lg:flex-1">
-      {/* Desktop: photo + leader-line-style callouts side by side */}
+      {/* Desktop: illustration + leader-line-style callouts side by side */}
       <div className="hidden items-start gap-10 lg:flex">
-        <div className="relative aspect-[1342/800] w-full max-w-[560px] shrink-0 overflow-hidden rounded-lg">
-          <Image
-            src="/images/bonsai.jpg"
-            alt={BONSAI_ALT}
-            fill
-            sizes="560px"
-            className="object-cover"
-            priority
-          />
+        <div className="relative aspect-[1342/800] w-full max-w-[560px] shrink-0 text-sage/80">
+          <BonsaiIllustration />
         </div>
         <ol className="flex flex-col gap-8 pt-2">
           {stages.map((stage, index) => (
@@ -41,10 +30,10 @@ export function HeroVisual() {
         </ol>
       </div>
 
-      {/* Mobile/tablet: photo full-width, plain stacked list below */}
+      {/* Mobile/tablet: illustration full-width, plain stacked list below */}
       <div className="lg:hidden">
-        <div className="relative aspect-[1342/800] w-full overflow-hidden rounded-lg">
-          <Image src="/images/bonsai.jpg" alt={BONSAI_ALT} fill sizes="100vw" className="object-cover" />
+        <div className="relative aspect-[1342/800] w-full text-sage/80">
+          <BonsaiIllustration />
         </div>
         <ol className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
           {stages.map((stage, index) => (

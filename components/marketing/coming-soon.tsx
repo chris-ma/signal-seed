@@ -1,7 +1,6 @@
 import Link from "next/link";
 
 import { Section } from "@/components/ui/section";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 
 interface ComingSoonProps {
@@ -24,9 +23,9 @@ export function ComingSoon({
   return (
     <Section tone="sand" className="pb-24 text-center">
       <div className="mx-auto max-w-2xl">
-        <div className="flex justify-center">
-          <Badge tone="light">{eyebrow}</Badge>
-        </div>
+        <p className="text-[13px] font-semibold tracking-[1px] text-charcoal/70 uppercase">
+          {eyebrow}
+        </p>
         <h1 className="text-display-sm mt-6 text-charcoal">{title}</h1>
         <p className="mt-6 text-base leading-relaxed text-charcoal/70 md:text-lg">
           {description}
