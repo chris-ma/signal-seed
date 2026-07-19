@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  /* Neutrals */
+  --color-bone: #f6f4ef;
+  --color-ricepaper: #f4ede9;
+  --color-stone: #d8d6cc;
+  --color-graphite: #7a7a73;
+  --color-charcoal: #1b1b1b;
+
+  /* Nature */
+  --color-moss: #6a7f6b;
+  --color-forest: #2e4a3f;
+  --color-clay: #c09f97;
+  --color-sand: #e8d9c6;
+  --color-ocean: #2c48ba;
+
+  /* Accent */
+  --color-sage: #c6f0d6;
+  --color-jade: #00e682;
+  --color-copper: #b87333;
+
+  /* Type */
+  --font-serif: var(--font-fraunces);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-plex-mono);
+
+  --text-display-lg: 4.5rem;
+  --text-display-lg--line-height: 1.05;
+  --text-display: 3rem;
+  --text-display--line-height: 1.1;
+  --text-display-sm: 2.25rem;
+  --text-display-sm--line-height: 1.15;
+
+  --radius-panel: 1.25rem;
+
+  --animate-fade-in: fade-in 200ms ease-out;
+  --animate-slide-in-right: slide-in-right 300ms cubic-bezier(0.16, 1, 0.3, 1);
+  --animate-slide-out-right: slide-out-right 200ms ease-in forwards;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(-4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slide-in-right {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slide-out-right {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100%);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-bone text-charcoal font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .eyebrow {
+    @apply font-mono text-xs tracking-[0.2em] uppercase;
+  }
+}
