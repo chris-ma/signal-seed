@@ -7,19 +7,13 @@ export function ClosingCTA() {
   return (
     <Section tone="charcoal" className="text-center">
       <div className="mx-auto max-w-2xl">
-        <h2 className="text-display-sm text-bone">
-          Grow your next idea like a forest, not a factory.
-        </h2>
-        <p className="mt-6 text-base text-bone/65 md:text-lg">
-          Start with one problem worth solving. SeedStudio will help you carry
-          it all the way to evidence.
+        <h2 className="text-display-sm text-bone">From ideation to validation.</h2>
+        <p className="mt-6 text-base text-stone md:text-lg">
+          All the tools needed to transform uncertainty into opportunity.
         </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-4">
+        <div className="mt-10">
           <Button asChild variant="primary" surface="dark" size="lg">
             <Link href="/join">Start your first project</Link>
-          </Button>
-          <Button asChild variant="ghost" surface="dark" size="lg">
-            <Link href="/frameworks">Explore the frameworks</Link>
           </Button>
         </div>
       </div>

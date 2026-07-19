@@ -7,7 +7,7 @@ import { Card, CardTitle, CardDescription } from "@/components/ui/card";
 import { PHASES, getFrameworksByPhase } from "@/lib/frameworks-data";
 
 export const metadata: Metadata = {
-  title: "Frameworks — SeedStudio",
+  title: "Frameworks — Signal Seed",
   description:
     "Fourteen structured frameworks across five phases, from problem definition to decision and next steps.",
 };
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 export default function FrameworksPage() {
   return (
     <>
-      <Section tone="charcoal" className="pt-36 pb-16 md:pt-44">
+      <Section tone="charcoal" className="pb-16">
         <Badge tone="dark">Frameworks</Badge>
         <h1 className="text-display-sm md:text-display mt-6 max-w-3xl text-bone">
           A structured practice for every stage of the journey.

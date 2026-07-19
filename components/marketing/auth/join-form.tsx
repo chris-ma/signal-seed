@@ -11,7 +11,7 @@ export function JoinForm() {
 
   return (
     <div>
-      <h1 className="font-serif text-2xl text-charcoal">Join SeedStudio</h1>
+      <h1 className="font-serif text-2xl text-charcoal">Join Signal Seed</h1>
       <p className="mt-2 text-sm text-charcoal/60">
         Tell us a little about you and we&apos;ll be in touch about early access.
       </p>

@@ -8,11 +8,11 @@ interface AuthSplitLayoutProps {
 
 export function AuthSplitLayout({ children }: AuthSplitLayoutProps) {
   return (
-    <div className="grid pt-20 md:min-h-[calc(100vh-5rem)] md:grid-cols-2">
+    <div className="grid md:min-h-[calc(100vh-106px)] md:grid-cols-2">
       <div className="hidden flex-col justify-between bg-forest px-12 py-16 text-bone md:flex">
         <div className="flex items-center gap-2.5">
           <LogoMark className="h-6 w-6" />
-          <span className="font-mono text-xs tracking-[0.25em] uppercase">SeedStudio</span>
+          <span className="font-mono text-xs tracking-[0.25em] uppercase">Signal Seed</span>
         </div>
         <p className="max-w-sm font-serif text-3xl leading-snug text-bone/90 italic">
           Grow ideas like forests, not factories.

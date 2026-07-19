@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 
 export default function NotFound() {
   return (
-    <Section tone="sand" className="pt-36 pb-24 text-center md:pt-44">
+    <Section tone="sand" className="pb-24 text-center">
       <div className="mx-auto max-w-xl">
         <div className="flex justify-center">
           <Badge tone="light">404</Badge>

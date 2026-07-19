@@ -1,50 +1,48 @@
-import { Section } from "@/components/ui/section";
 import { Card, CardTitle, CardDescription } from "@/components/ui/card";
+import { Section } from "@/components/ui/section";
 import { IconTile } from "@/components/ui/icon-tile";
 import type { IconName } from "@/lib/frameworks-data";
 
 const FEATURES: { icon: IconName; title: string; description: string }[] = [
   {
     icon: "ai",
-    title: "AI-guided frameworks",
-    description:
-      "An AI collaborator walks you through the right framework at the right moment — never replacing your judgment, only sharpening it.",
+    title: "AI Research Copilot",
+    description: "Ask questions, synthesize interviews and surface patterns in minutes, not days.",
   },
   {
     icon: "validate",
-    title: "Structured validation",
-    description:
-      "Turn assumptions into experiments with clear thresholds, so “I think” becomes “we tested.”",
+    title: "Validation Boards",
+    description: "Track hypotheses, experiments and evidence in one visual workspace.",
   },
   {
     icon: "insights",
-    title: "Evidence tracking",
-    description:
-      "Every hypothesis, test, and result lives in one place — a decision record you can always point back to.",
+    title: "Framework Library",
+    description: "70+ proven frameworks — 5 Whys to Pugh Matrix — built into every stage.",
   },
   {
-    icon: "research",
-    title: "Calm, premium tooling",
-    description:
-      "Editorial spacing, soft motion, and clear hierarchy, so the work feels considered instead of chaotic.",
+    icon: "growth",
+    title: "Living Roadmaps",
+    description: "Ideas evolve as evidence comes in, so your roadmap reflects reality.",
   },
 ];
 
 export function FeaturesBenefits() {
   return (
-    <Section tone="bone">
-      <div className="max-w-2xl">
-        <p className="eyebrow text-graphite">Features &amp; benefits</p>
-        <h2 className="text-display-sm mt-4 text-charcoal">
-          Everything you need to move an idea forward, honestly.
+    <Section tone="forest">
+      <div className="mx-auto max-w-2xl text-center">
+        <p className="text-[13px] font-semibold tracking-[1px] text-bone uppercase">
+          Features &amp; benefits
+        </p>
+        <h2 className="text-display-sm mt-4 text-bone">
+          Built to make evidence effortless.
         </h2>
       </div>
-      <div className="mt-14 grid gap-6 md:grid-cols-2">
+      <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {FEATURES.map((feature) => (
-          <Card key={feature.title} className="flex flex-col gap-4 p-8">
-            <IconTile icon={feature.icon} />
-            <CardTitle>{feature.title}</CardTitle>
-            <CardDescription>{feature.description}</CardDescription>
+          <Card key={feature.title} className="border-none bg-charcoal p-7">
+            <IconTile icon={feature.icon} tone="dark" />
+            <CardTitle className="mt-4 text-bone">{feature.title}</CardTitle>
+            <CardDescription className="mt-2 text-stone">{feature.description}</CardDescription>
           </Card>
         ))}
       </div>

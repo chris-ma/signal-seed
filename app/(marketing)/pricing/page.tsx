@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { ComingSoon } from "@/components/marketing/coming-soon";
 
-export const metadata: Metadata = { title: "Pricing — SeedStudio" };
+export const metadata: Metadata = { title: "Pricing — Signal Seed" };
 
 export default function PricingPage() {
   return (

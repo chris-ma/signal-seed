@@ -11,7 +11,7 @@ export function SiteFooter() {
         <div>
           <div className="flex items-center gap-2.5">
             <LogoMark className="h-6 w-6" />
-            <span className="font-mono text-xs tracking-[0.25em] uppercase">SeedStudio</span>
+            <span className="font-mono text-xs tracking-[0.25em] uppercase">Signal Seed</span>
           </div>
           <p className="mt-4 max-w-xs text-sm text-bone/60">
             Grow ideas like forests, not factories.
@@ -46,7 +46,7 @@ export function SiteFooter() {
         </div>
       </div>
       <div className="mt-12 border-t border-bone/10 pt-6 text-xs text-bone/40">
-        © 2026 SeedStudio. Grow ideas like forests, not factories.
+        © 2026 Signal Seed. Grow ideas like forests, not factories.
       </div>
     </Section>
   );

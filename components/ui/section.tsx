@@ -8,6 +8,8 @@ const TONE_CLASSES = {
   charcoal: "bg-charcoal text-bone",
   sand: "bg-sand text-charcoal",
   forest: "bg-forest text-bone",
+  ricepaper: "bg-ricepaper text-charcoal",
+  white: "bg-white text-charcoal",
 } as const;
 
 export type SectionTone = keyof typeof TONE_CLASSES;

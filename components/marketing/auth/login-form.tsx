@@ -20,7 +20,7 @@ export function LoginForm() {
         <div className="mt-8 rounded-2xl border border-stone/60 bg-sand/40 p-5 text-sm text-charcoal/75">
           Login isn&apos;t connected yet — join the waitlist instead.{" "}
           <Link href="/join" className="font-medium underline underline-offset-2">
-            Join SeedStudio
+            Join Signal Seed
           </Link>
           .
         </div>
@@ -58,7 +58,7 @@ export function LoginForm() {
       )}
 
       <p className="mt-8 text-sm text-charcoal/60">
-        New to SeedStudio?{" "}
+        New to Signal Seed?{" "}
         <Link href="/join" className="font-medium text-charcoal underline underline-offset-2">
           Join instead
         </Link>

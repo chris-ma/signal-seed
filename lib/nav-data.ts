@@ -1,41 +1,20 @@
-import { PHASES, getFrameworksByPhase } from "@/lib/frameworks-data";
-
 export interface NavLinkItem {
   label: string;
   href: string;
-  description?: string;
 }
 
-export interface NavColumn {
-  heading: string;
-  href: string;
-  items: NavLinkItem[];
-}
+export const PRIMARY_NAV: NavLinkItem[] = [
+  { label: "Explore", href: "/explore" },
+  { label: "Tools", href: "/tools" },
+  { label: "Frameworks", href: "/frameworks" },
+  { label: "Resources", href: "/resources" },
+  { label: "Pricing", href: "/pricing" },
+];
 
-export interface NavItem {
-  label: string;
-  href: string;
-  type: "link" | "mega";
-  columns?: NavColumn[];
-}
-
-export const PRIMARY_NAV: NavItem[] = [
-  { label: "Explore", href: "/explore", type: "link" },
-  { label: "Tools", href: "/tools", type: "link" },
-  {
-    label: "Frameworks",
-    href: "/frameworks",
-    type: "mega",
-    columns: PHASES.map((phase) => ({
-      heading: phase.shortName,
-      href: `/frameworks#${phase.slug}`,
-      items: getFrameworksByPhase(phase.slug).map((framework) => ({
-        label: framework.name,
-        href: `/frameworks/${framework.slug}`,
-        description: framework.tagline,
-      })),
-    })),
-  },
-  { label: "Resources", href: "/resources", type: "link" },
-  { label: "Pricing", href: "/pricing", type: "link" },
+export const HEADER_NAV: NavLinkItem[] = [
+  { label: "Discover", href: "/discover" },
+  { label: "Research", href: "/research" },
+  { label: "Ideate", href: "/ideate" },
+  { label: "Validate", href: "/validate" },
+  { label: "Iterate", href: "/iterate" },
 ];

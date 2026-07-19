@@ -30,7 +30,7 @@ export default function OpengraphImage() {
             />
           </div>
           <span style={{ fontSize: 22, letterSpacing: 6, textTransform: "uppercase" }}>
-            SeedStudio
+            Signal Seed
           </span>
         </div>
         <div style={{ marginTop: 48, fontSize: 64, maxWidth: 900, lineHeight: 1.1, display: "flex" }}>

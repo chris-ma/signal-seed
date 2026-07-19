@@ -22,7 +22,7 @@ export function ComingSoon({
   ctaLabel = "Explore the frameworks",
 }: ComingSoonProps) {
   return (
-    <Section tone="sand" className="pt-36 pb-24 text-center md:pt-44">
+    <Section tone="sand" className="pb-24 text-center">
       <div className="mx-auto max-w-2xl">
         <div className="flex justify-center">
           <Badge tone="light">{eyebrow}</Badge>

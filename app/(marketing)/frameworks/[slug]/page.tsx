@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const framework = getFrameworkBySlug(slug);
   if (!framework) return {};
   return {
-    title: `${framework.name} — SeedStudio Frameworks`,
+    title: `${framework.name} — Signal Seed Frameworks`,
     description: framework.tagline,
   };
 }
@@ -38,7 +38,7 @@ export default async function FrameworkDetailPage({ params }: PageProps) {
 
   return (
     <>
-      <Section tone="charcoal" className="pt-36 pb-16 md:pt-44">
+      <Section tone="charcoal" className="pb-16">
         <Link href="/frameworks" className="eyebrow text-sage transition-colors hover:text-bone">
           ← {phase?.shortName}
         </Link>

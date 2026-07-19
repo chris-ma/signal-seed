@@ -1,5 +1,4 @@
 import { Hero } from "@/components/marketing/home/hero";
-import { Problem } from "@/components/marketing/home/problem";
 import { WhatWeDo } from "@/components/marketing/home/what-we-do";
 import { AreasWeCover } from "@/components/marketing/home/areas-we-cover";
 import { FeaturesBenefits } from "@/components/marketing/home/features-benefits";
@@ -11,7 +10,6 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Problem />
       <WhatWeDo />
       <AreasWeCover />
       <FeaturesBenefits />

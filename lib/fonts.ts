@@ -1,9 +1,9 @@
-import { Fraunces, Inter, IBM_Plex_Mono } from "next/font/google";
+import { Lora, Inter, IBM_Plex_Mono } from "next/font/google";
 
-export const fraunces = Fraunces({
+export const lora = Lora({
   subsets: ["latin"],
-  variable: "--font-fraunces",
-  weight: ["400", "500", "600"],
+  variable: "--font-lora",
+  weight: ["400", "500"],
   style: ["normal", "italic"],
   display: "swap",
 });

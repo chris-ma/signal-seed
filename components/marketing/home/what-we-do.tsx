@@ -1,51 +1,51 @@
 import { Section } from "@/components/ui/section";
-import { Card, CardTitle, CardDescription } from "@/components/ui/card";
-import { IconTile } from "@/components/ui/icon-tile";
-import type { IconName } from "@/lib/frameworks-data";
 
-const PRINCIPLES: { icon: IconName; title: string; description: string }[] = [
+const ITEMS = [
   {
-    icon: "insights",
-    title: "Curiosity before certainty",
-    description:
-      "Every project starts with a question worth asking, not an answer worth defending.",
+    title: "Discover & Research",
+    description: "Ground every idea in real problems and real evidence before you build.",
   },
   {
-    icon: "validate",
-    title: "Evidence over opinion",
+    title: "Ideate & Prototype",
     description:
-      "Decisions are backed by what people actually do, not what the loudest voice believes.",
+      "Generate and shape solution options with AI as a collaborator, not a crutch.",
   },
   {
-    icon: "iterate",
-    title: "Systems over shortcuts",
-    description: "A repeatable process beats a lucky guess, every time you run it again.",
+    title: "Validate & Iterate",
+    description:
+      "Design lean experiments, read the results honestly, and decide with confidence.",
   },
 ];
 
 export function WhatWeDo() {
   return (
-    <Section tone="bone">
-      <div className="max-w-2xl">
-        <p className="eyebrow text-graphite">What we do</p>
-        <h2 className="text-display-sm mt-4 text-charcoal">
-          SeedStudio is an AI-guided innovation operating system.
-        </h2>
-        <p className="mt-6 text-base leading-relaxed text-charcoal/70 md:text-lg">
-          It gives teams a structured, evidence-based path from Ideation to
-          Validation to Execution — replacing scattered docs, guesswork, and
-          gut-feel roadmaps with a calm, repeatable practice for turning
-          uncertainty into opportunity.
-        </p>
-      </div>
-      <div className="mt-14 grid gap-6 md:grid-cols-3">
-        {PRINCIPLES.map((principle) => (
-          <Card key={principle.title}>
-            <IconTile icon={principle.icon} />
-            <CardTitle className="mt-5">{principle.title}</CardTitle>
-            <CardDescription className="mt-2">{principle.description}</CardDescription>
-          </Card>
-        ))}
+    <Section tone="ricepaper">
+      <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
+        <div>
+          <p className="text-[13px] font-semibold tracking-[1px] text-moss uppercase">
+            What we do
+          </p>
+          <h2 className="text-display-sm mt-4 text-charcoal">
+            One connected system from ideation to validation.
+          </h2>
+          <p className="mt-4 text-base leading-relaxed text-graphite">
+            Signal Seed combines systems thinking, structured research, lean
+            experimentation and AI guidance into a single calm workspace — so your
+            team moves through the innovation lifecycle with evidence, not
+            guesswork.
+          </p>
+        </div>
+        <div className="flex flex-col gap-5">
+          {ITEMS.map((item) => (
+            <div key={item.title} className="flex gap-4">
+              <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-moss" />
+              <div>
+                <p className="font-semibold text-charcoal">{item.title}</p>
+                <p className="mt-1 text-sm text-graphite">{item.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );

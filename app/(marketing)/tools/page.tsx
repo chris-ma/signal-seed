@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import { ComingSoon } from "@/components/marketing/coming-soon";
 
-export const metadata: Metadata = { title: "Tools — SeedStudio" };
+export const metadata: Metadata = { title: "Tools — Signal Seed" };
 
 export default function ToolsPage() {
   return (
