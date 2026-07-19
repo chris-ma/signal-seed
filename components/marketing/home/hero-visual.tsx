@@ -8,7 +8,7 @@ export function HeroVisual() {
     <div className="lg:flex-1">
       {/* Desktop: illustration + leader-line-style callouts side by side */}
       <div className="hidden items-start gap-10 lg:flex">
-        <div className="relative aspect-[1342/800] w-full max-w-[560px] shrink-0 text-sage/80">
+        <div className="relative aspect-[1342/800] w-full max-w-[560px] shrink-0">
           <BonsaiIllustration />
         </div>
         <ol className="flex flex-col gap-8 pt-2">
